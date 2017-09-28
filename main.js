@@ -1,12 +1,12 @@
 const sparks = [];
 
 function setup() {
-  createCanvas(1600, 300);
+  createCanvas(800, 300);
 }
 
 function draw() {
   background(255);
-  addSparks(50);
+  addSparks(25);
   sparks.forEach((spark, i) => {
     spark.run();
     if(spark.isDead()) sparks.splice(i, 1);
